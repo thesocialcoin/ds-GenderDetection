@@ -13,7 +13,11 @@ Can be structured in two steps:
 
 ### Further goals
 
-Provide the methodology to replicate MiniAM2 and make available the option of contributing and improveming on the model
+Provide the methodology to replicate MiniAM2 and make available the option of contributing and improving on the model:
+- Adding languages
+- Improving metrics
+- Provide labeling functions
+- Modify and improve methodology
 
 ## Get started
 
