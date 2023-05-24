@@ -19,20 +19,46 @@ Provide the methodology to replicate MiniAM2 and make available the option of co
 - Provide labeling functions
 - Modify and improve methodology
 
+## Data 
+
+Right now, data is not shared in the project. However, we provide the steps to obtain a labeled set if an unlabeled
+training set is given. There is no need to provide an annotated dataset, since we share the decision functions 
+models for english, spanish and french
+
 ## Get started
 
 ### Installation
 
-Coming soon...
+Create a new virtual environment and activate it
 
-### Test the environment and model building
+```bash
+python -m venv miniam2
+source miniam2/bin/activate
+```
 
-Open notebook with title _1.Test model loading, adapting tokenizers and prediction methods.ipynb_ and follow the walkthrough instructions
+Then install all dependencies specified in _requirements.txt_
+```bash
+pip install -r requirements.txt
+```
 
-### Train MiniAM2
+That is all! You can now try to run the notebooks to check all the functionality of the project.
 
-We offer an example of MiniAM2 training in the notebook titled _2.Train MiniAM2.ipynb_. A training set must be provided first with the path of the location.
+### Create a training set using Assemblage distillation
+Notebooks 1,2,3,4 and 5 show the complete steps needed to obtain a soft labeled training set departing from an unlabeled
+training set by means of the Assemblage distillation process. 
 
-### Evaluate MiniAM2
+*Remarks*
+- Notebooks 1 and 2 can be skipped
+- Notebook 3 can also be skipped and used decision functions for english, spanish and french languages given in 
+_models_ folder named _LogisticRegression[lang]_, where _lang_ stands for the language code. We claim in our paper that 
+decision functions given can be applied to some other languages without losing quality.
+- Notebook 3 needs an annotated dataset (called dev set) externally provided to successfully train a decision function. 
+- Notebook 4 needs an unlabeled training set. The resulting training set must be saved.
 
-Evaluate your model using as an example the notebook _3.Compute Model Metrics.ipynb_. The notebook assumes that some test sets exist in the project and whose path is given in the notebook.
+### Train MiniAM2 and evaluate it with several metrics
+Notebooks 5,6,7 and 8 walk the steps needed to train a MiniAM2 model assuming a training set is available. We offer an 
+example of MiniAM2 training in the notebook 6. A training set must be provided first with the path of the location.
+Evaluate your model using as an example the notebook 7 and 8. 
+The notebook assumes that some test sets exist in the project and whose path is given in the notebook.
+
+
