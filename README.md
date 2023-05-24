@@ -1,6 +1,17 @@
 # ds-GenderDetection
 
-Creation of the gender classification model [MiniAM2](https://huggingface.co/CitibeatsAI/miniam2). Inputs are _screen_name_, _name_ and _bio_ description of Twitter users and the outputs are "man", "woman" and "organization" classes. 
+Creation of the gender classification model [MiniAM2](https://huggingface.co/CitibeatsAI/miniam2).
+
+**License:** This software is © 2023 The Social Coin, SL and is licensed under the OPEN RAIL M License. See [license](https://www.citibeats.com/open-rail-m-license-for-citibeats)
+
+The latest version of the model is uploaded and open to use in 
+[Hugging Face](https://huggingface.co/CitibeatsAI/miniam2) hub. We strongly recommend to visit the model card in the
+link, to meet, before the usage of the model, the limitations, bias and good and bad uses of the MiniAM2.
+
+## Inputs/Outputs
+
+Inputs are _screen_name_, _name_ and _bio_ description of Twitter users and the outputs are _organization_, _man_ and 
+_woman_  classes. Respectively
 
 ## Languages available: 
 EN, ES, FR
