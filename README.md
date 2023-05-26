@@ -55,7 +55,7 @@ pip install -r requirements.txt
 That is all! You can now try to run the notebooks to check all the functionality of the project.
 
 ### Create a training set using Assemblage distillation
-Notebooks 1,2,3,4 and 5 show the complete steps needed to obtain a soft labeled training set departing from an unlabeled
+Notebooks 1,2,3 and 4 show the complete steps needed to obtain a soft labeled training set departing from an unlabeled
 training set by means of the Assemblage distillation process. 
 
 *Remarks*
